@@ -9,6 +9,10 @@ $tabletMax: 991.98px;
 $desktopMin: 992px;
 $desktopMax: 1199.98px;
 
+$white: #fff;
+$green: #0C8543;
+$bgColor: #F3F9F6;
+
 html,
 body {
   min-height: 100vh;
@@ -25,7 +29,7 @@ h2 {
   margin-bottom: 14px;
 
   span {
-    color: #0C8543;
+    color: $green;
   }
 
   @media (max-width: $mobileMax) {
@@ -80,7 +84,7 @@ header {
 
     span {
       font-size: 50px;
-      color: #0C8543;
+      color: $green;
       font-weight: 700;
     }
 
@@ -127,7 +131,7 @@ header {
   }
 
   &__item {
-    background: #F3F9F6;
+    background: $bgColor;
     padding: 30px 18px;
     display: flex;
     align-items: center;
@@ -190,7 +194,7 @@ header {
 }
 
 .sectionTwo {
-  background: #F3F9F6;
+  background: $bgColor;
   padding: 20px 0;
 
   @media (max-width: $mobileMax) {
@@ -251,7 +255,7 @@ header {
   &__item {
     height: 211px;
     border-radius: 8px;
-    background: #0C8543;
+    background: $green;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -268,7 +272,7 @@ header {
   &__title {
     font-size: 21px;
     line-height: 27.3px;
-    color: #fff;
+    color: $white;
     text-align: center;
     margin: auto;
     padding: 0 10px;
@@ -338,8 +342,8 @@ header {
 }
 
 footer {
-  background: #0C8543;
-  color: #fff;
+  background: $green;
+  color: $white;
   padding: 25px 0;
 
   nav {
@@ -349,7 +353,7 @@ footer {
   }
 
   .link {
-    color: #fff;
+    color: $white;
     text-decoration: underline;
     text-align: center;
     font-size: 14px;
