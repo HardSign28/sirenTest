@@ -7,7 +7,7 @@ $tablet-min: 768px;
 $tablet-max: 991.98px;
 
 $desktop-min: 992px;
-//$desktop-max: 1199.98px;
+$desktop-max: 1199.98px;
 
 $white: #fff;
 $green: #0c8543;
@@ -279,12 +279,12 @@ header {
 		height: 211px;
 		overflow: hidden;
 
-		@media (max-width: $desktop-min) {
-			height: 180px;
-		}
-
 		@media (max-width: $tablet-max) {
 			height: 145px;
+		}
+
+		@media (min-width: $desktop-min) and (max-width: $desktop-max) {
+			height: 170px;
 		}
 	}
 
@@ -299,6 +299,11 @@ header {
 		@media (max-width: $tablet-max) {
 			font-size: 14px;
 			line-height: 18px;
+		}
+
+		@media (min-width: $desktop-min) and (max-width: $desktop-max) {
+			font-size: 16px;
+			line-height: 21px;
 		}
 	}
 

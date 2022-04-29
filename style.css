@@ -268,14 +268,14 @@ header {
   height: 211px;
   overflow: hidden;
 }
-@media (max-width: 992px) {
-  .sectionThree__item {
-    height: 180px;
-  }
-}
 @media (max-width: 991.98px) {
   .sectionThree__item {
     height: 145px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .sectionThree__item {
+    height: 170px;
   }
 }
 .sectionThree__title {
@@ -290,6 +290,12 @@ header {
   .sectionThree__title {
     font-size: 14px;
     line-height: 18px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .sectionThree__title {
+    font-size: 16px;
+    line-height: 21px;
   }
 }
 .sectionThree__img {
