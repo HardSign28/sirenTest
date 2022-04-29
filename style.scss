@@ -19,10 +19,12 @@ body {
 }
 
 .logo {
-	background: url("img/logo.svg") 50% 50% no-repeat;
+	background-image: url("img/logo.svg");
+	background-position: center;
+	background-repeat: no-repeat;
 
 	&_white {
-		background: url("img/logo-white.svg") 50% 50% no-repeat;
+		background-image: url("img/logo-white.svg");
 	}
 
 	@media (max-width: $mobile-max) {
@@ -236,20 +238,20 @@ header {
 	}
 
 	&__fixIcon {
-		background: url("img/fix-icon.png") no-repeat;
+		background: url("img/fix-icon.png") center no-repeat;
 		background-size: contain;
 		height: 86.68px;
 		position: absolute;
 		width: 240px;
 
-		@media (max-width: $mobile-max) {
+		@media (max-width: $tablet-max) {
 			height: 73px;
 			right: 24px;
 			top: 10px;
 			width: 200px;
 		}
 
-		@media (min-width: $mobile-min) {
+		@media (min-width: $tablet-min) {
 			right: -5px;
 			top: -20px;
 		}
@@ -319,7 +321,7 @@ header {
 	}
 
 	&__iconWarranty {
-		background: url("img/icon-5.svg") no-repeat;
+		background: url("img/icon-5.svg") center no-repeat;
 		background-size: contain;
 
 		@media (min-width: $tablet-min) {

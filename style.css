@@ -5,10 +5,12 @@ body {
 }
 
 .logo {
-  background: url("img/logo.svg") 50% 50% no-repeat;
+  background-image: url("img/logo.svg");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .logo_white {
-  background: url("img/logo-white.svg") 50% 50% no-repeat;
+  background-image: url("img/logo-white.svg");
 }
 @media (max-width: 767.98px) {
   .logo {
@@ -226,13 +228,13 @@ header {
   }
 }
 .sectionTwo__fixIcon {
-  background: url("img/fix-icon.png") no-repeat;
+  background: url("img/fix-icon.png") center no-repeat;
   background-size: contain;
   height: 86.68px;
   position: absolute;
   width: 240px;
 }
-@media (max-width: 767.98px) {
+@media (max-width: 991.98px) {
   .sectionTwo__fixIcon {
     height: 73px;
     right: 24px;
@@ -240,7 +242,7 @@ header {
     width: 200px;
   }
 }
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   .sectionTwo__fixIcon {
     right: -5px;
     top: -20px;
@@ -308,7 +310,7 @@ header {
   min-height: 216px;
 }
 .sectionFour__iconWarranty {
-  background: url("img/icon-5.svg") no-repeat;
+  background: url("img/icon-5.svg") center no-repeat;
   background-size: contain;
 }
 @media (min-width: 768px) {
