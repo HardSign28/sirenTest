@@ -330,14 +330,14 @@ header {
 		background-size: contain;
 
 		@media (min-width: $tablet-min) {
-			padding-top: 84%;
+			padding-top: 83%;
 			position: absolute;
 			top: 50%;
 			transform: translateY(-50%);
-			width: 100%;
+			width: calc(100% - 30px);
 		}
 
-		@media (max-width: $tablet-max) {
+		@media (max-width: $mobile-max) {
 			height: 160px;
 			margin: 0 auto 20px;
 			width: 170px;
