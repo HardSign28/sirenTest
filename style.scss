@@ -228,6 +228,10 @@ header {
 		@media (max-width: $mobile-max) {
 			margin-bottom: 30px;
 			margin-top: 30px;
+
+			.col {
+				flex: 1 1 auto;
+			}
 		}
 	}
 
@@ -393,3 +397,13 @@ footer {
 		line-height: 18px;
 	}
 }
+
+/* IE 11 */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	.sectionFour {
+		&__ieFix {
+			display: block !important;
+		}
+	}
+}
+/* #IE 11 */

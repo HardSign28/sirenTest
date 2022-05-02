@@ -221,6 +221,9 @@ header {
     margin-bottom: 30px;
     margin-top: 30px;
   }
+  .sectionTwo__item .col {
+    flex: 1 1 auto;
+  }
 }
 @media (min-width: 992px) {
   .sectionTwo h2 {
@@ -380,5 +383,13 @@ footer .copyright {
   font-size: 12px;
   line-height: 18px;
 }
+
+/* IE 11 */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .sectionFour__ieFix {
+    display: block !important;
+  }
+}
+/* #IE 11 */
 
 /*# sourceMappingURL=style.css.map */
