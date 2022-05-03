@@ -315,9 +315,6 @@ header {
     padding: 35px 0 15px;
   }
 }
-.sectionFour .container {
-  min-height: 216px;
-}
 .sectionFour__iconWarranty {
   background: url("img/icon-5.svg") center no-repeat;
   background-size: contain;
@@ -339,6 +336,9 @@ header {
   }
 }
 @media (min-width: 768px) {
+  .sectionFour .container {
+    height: 216px;
+  }
   .sectionFour__warrantyDescription {
     margin-top: 20px;
   }
@@ -408,8 +408,8 @@ footer .copyright {
     -ms-grid-row: 1;
   }
 
-  .sectionFour__ieFix {
-    display: block !important;
+  .sectionFour__ieFix .row {
+    flex-grow: 1;
   }
 }
 @media screen and (-ms-high-contrast: none) and (max-width: 767.98px) {

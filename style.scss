@@ -325,10 +325,6 @@ header {
 		padding: 35px 0 15px;
 	}
 
-	.container {
-		min-height: 216px;
-	}
-
 	&__iconWarranty {
 		background: url("img/icon-5.svg") center no-repeat;
 		background-size: contain;
@@ -347,7 +343,12 @@ header {
 			width: 170px;
 		}
 	}
+
 	@media (min-width: $tablet-min) {
+		.container {
+			height: 216px;
+		}
+
 		&__warrantyDescription {
 			margin-top: 20px;
 		}
@@ -431,7 +432,9 @@ footer {
 
 	.sectionFour {
 		&__ieFix {
-			display: block !important;
+			.row {
+				flex-grow: 1;
+			}
 		}
 	}
 }
