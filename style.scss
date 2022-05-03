@@ -398,7 +398,6 @@ footer {
 	}
 }
 
-/* IE 11 */
 @media screen and (-ms-high-contrast: none) {
 	.sectionOne {
 		&__description {
@@ -407,18 +406,26 @@ footer {
 
 		&__itemsWrap {
 			display: -ms-grid;
-			-ms-grid-columns: 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr;
-			-ms-grid-rows: 1fr;
+		}
+
+		&__item {
+			margin-left: 10px;
+			margin-right: 10px;
 		}
 
 		&__item:nth-of-type(1){
-			-ms-grid-row: 1;
 			-ms-grid-column: 1;
+			-ms-grid-row: 1;
 		}
 
 		&__item:nth-of-type(2){
+			-ms-grid-column: 2;
 			-ms-grid-row: 1;
+		}
+
+		&__item:nth-of-type(3){
 			-ms-grid-column: 3;
+			-ms-grid-row: 1;
 		}
 	}
 
@@ -429,31 +436,35 @@ footer {
 	}
 }
 
-@media screen and (-ms-high-contrast: none) and (min-width: $desktop-min) {
+@media screen and (-ms-high-contrast: none) and (max-width: $mobile-max) {
 	.sectionOne {
 		&__itemsWrap {
-			-ms-grid-columns: 1fr 20px 1fr 20px 1fr 20px 1fr;
-			-ms-grid-rows: 1fr;
+			-ms-grid-columns: 1fr 1fr;
+			-ms-grid-rows: 1fr 1fr;
+		}
+
+		&__item:nth-of-type(n+3) {
+			margin-top: 20px;
 		}
 
 		&__item:nth-of-type(3){
-			-ms-grid-row: 1;
-			-ms-grid-column: 5;
+			-ms-grid-column: 1;
+			-ms-grid-row: 2;
 		}
 
 		&__item:nth-of-type(4){
-			-ms-grid-row: 1;
-			-ms-grid-column: 7;
+			-ms-grid-column: 2;
+			-ms-grid-row: 2;
 		}
 
 		&__item:nth-of-type(5){
-			-ms-grid-row: 1;
-			-ms-grid-column: 9;
+			-ms-grid-column: 1;
+			-ms-grid-row: 3;
 		}
 
 		&__item:nth-of-type(6){
-			-ms-grid-row: 1;
-			-ms-grid-column: 11;
+			-ms-grid-column: 2;
+			-ms-grid-row: 3;
 		}
 	}
 }
@@ -461,58 +472,51 @@ footer {
 @media screen and (-ms-high-contrast: none) and (min-width: $tablet-min) and (max-width: $tablet-max) {
 	.sectionOne {
 		&__itemsWrap {
-			-ms-grid-columns: 1fr 20px 1fr 20px 1fr;
-			-ms-grid-rows: 1fr 20px 1fr;
+			-ms-grid-columns: 1fr 1fr 1fr;
+			-ms-grid-rows: 1fr 1fr;
 		}
 
-		&__item:nth-of-type(3){
-			-ms-grid-row: 1;
-			-ms-grid-column: 5;
+		&__item:nth-of-type(n+4) {
+			margin-top: 20px;
 		}
 
 		&__item:nth-of-type(4){
-			-ms-grid-row: 3;
 			-ms-grid-column: 1;
+			-ms-grid-row: 2;
 		}
 
 		&__item:nth-of-type(5){
-			-ms-grid-row: 3;
-			-ms-grid-column: 3;
+			-ms-grid-column: 2;
+			-ms-grid-row: 2;
 		}
 
 		&__item:nth-of-type(6){
-			-ms-grid-row: 3;
-			-ms-grid-column: 5;
+			-ms-grid-column: 3;
+			-ms-grid-row: 2;
 		}
 	}
 }
 
-@media screen and (-ms-high-contrast: none) and (max-width: $mobile-max) {
+@media screen and (-ms-high-contrast: none) and (min-width: $desktop-min) {
 	.sectionOne {
 		&__itemsWrap {
-			-ms-grid-columns: 1fr 20px 1fr;
-			-ms-grid-rows: 1fr 20px 1fr 20px 1fr;
-		}
-
-		&__item:nth-of-type(3){
-			-ms-grid-row: 3;
-			-ms-grid-column: 1;
+			-ms-grid-columns: 1fr 1fr 1fr;
+			-ms-grid-rows: 1fr;
 		}
 
 		&__item:nth-of-type(4){
-			-ms-grid-row: 3;
-			-ms-grid-column: 3;
+			-ms-grid-column: 4;
+			-ms-grid-row: 1;
 		}
 
 		&__item:nth-of-type(5){
-			-ms-grid-row: 5;
-			-ms-grid-column: 1;
+			-ms-grid-column: 5;
+			-ms-grid-row: 1;
 		}
 
 		&__item:nth-of-type(6){
-			-ms-grid-row: 5;
-			-ms-grid-column: 3;
+			-ms-grid-column: 6;
+			-ms-grid-row: 1;
 		}
 	}
 }
-/* #IE 11 */
