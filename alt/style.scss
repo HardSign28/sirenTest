@@ -1,4 +1,4 @@
-@import "font/stylesheet.css";
+@import "../font/stylesheet.css";
 
 $mobile-min: 576px;
 $mobile-max: 767.98px;
@@ -19,12 +19,12 @@ body {
 }
 
 .logo {
-	background-image: url("img/logo.svg");
+	background-image: url("/img/logo.svg");
 	background-position: center;
 	background-repeat: no-repeat;
 
 	&_white {
-		background-image: url("img/logo-white.svg");
+		background-image: url("/img/logo-white.svg");
 	}
 
 	@media (max-width: $mobile-max) {
@@ -180,19 +180,19 @@ header {
 		}
 
 		&_warranty {
-			background-image: url("img/icon-1.svg");
+			background-image: url("/img/icon-1.svg");
 		}
 
 		&_fit {
-			background-image: url("img/icon-2.svg");
+			background-image: url("/img/icon-2.svg");
 		}
 
 		&_saving {
-			background-image: url("img/icon-3.svg");
+			background-image: url("/img/icon-3.svg");
 		}
 
 		&_rating {
-			background-image: url("img/icon-4.svg");
+			background-image: url("/img/icon-4.svg");
 		}
 	}
 
@@ -242,7 +242,7 @@ header {
 	}
 
 	&__fixIcon {
-		background: url("img/fix-icon.png") center no-repeat;
+		background: url("/img/fix-icon.png") center no-repeat;
 		background-size: contain;
 		height: 86.68px;
 		position: absolute;
@@ -326,7 +326,7 @@ header {
 	}
 
 	&__iconWarranty {
-		background: url("img/icon-5.svg") center no-repeat;
+		background: url("/img/icon-5.svg") center no-repeat;
 		background-size: contain;
 
 		@media (min-width: $tablet-min) {
@@ -399,4 +399,4 @@ footer {
 	}
 }
 
-@import "ie-grid.scss";
+@import "../ie-flex.scss";
