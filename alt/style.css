@@ -5,12 +5,12 @@ body {
 }
 
 .logo {
-  background-image: url("/img/logo.svg");
+  background-image: url("../img/logo.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
 .logo_white {
-  background-image: url("/img/logo-white.svg");
+  background-image: url("../img/logo-white.svg");
 }
 @media (max-width: 767.98px) {
   .logo {
@@ -174,16 +174,16 @@ header {
   }
 }
 .sectionOne__icon_warranty {
-  background-image: url("/img/icon-1.svg");
+  background-image: url("../img/icon-1.svg");
 }
 .sectionOne__icon_fit {
-  background-image: url("/img/icon-2.svg");
+  background-image: url("../img/icon-2.svg");
 }
 .sectionOne__icon_saving {
-  background-image: url("/img/icon-3.svg");
+  background-image: url("../img/icon-3.svg");
 }
 .sectionOne__icon_rating {
-  background-image: url("/img/icon-4.svg");
+  background-image: url("../img/icon-4.svg");
 }
 .sectionOne__description {
   font-size: 21px;
@@ -231,7 +231,7 @@ header {
   }
 }
 .sectionTwo__fixIcon {
-  background: url("/img/fix-icon.png") center no-repeat;
+  background: url("../img/fix-icon.png") center no-repeat;
   background-size: contain;
   height: 86.68px;
   position: absolute;
@@ -316,7 +316,7 @@ header {
   }
 }
 .sectionFour__iconWarranty {
-  background: url("/img/icon-5.svg") center no-repeat;
+  background: url("../img/icon-5.svg") center no-repeat;
   background-size: contain;
 }
 @media (min-width: 768px) {
