@@ -7,9 +7,8 @@
 		&__itemsWrap {
 			display: flex;
 			flex-wrap: wrap;
-			padding-left: 5px;
-			padding-right: 5px;
 			margin-bottom: -20px;
+			padding: 0 5px;
 		}
 
 		&__item {
@@ -30,9 +29,8 @@
 @media screen and (-ms-high-contrast: none) and (max-width: $mobile-max) {
 	.sectionOne {
 		&__itemsWrap {
-			padding-left: 11px;
-			padding-right: 11px;
 			margin-bottom: -8px;
+			padding: 0 11px;
 		}
 
 		&__item {
