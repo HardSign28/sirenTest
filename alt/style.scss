@@ -399,4 +399,158 @@ footer {
 	}
 }
 
-@import "../ie-grid.scss";
+@media screen and (-ms-high-contrast: none) {
+	.sectionOne {
+		.container {
+			overflow: hidden;
+		}
+
+		&__description {
+			max-width: 100%;
+		}
+
+		&__itemsWrap {
+			display: -ms-grid;
+			padding: 0 5px;
+		}
+
+		&__item {
+			margin: 0 10px;
+
+			&:nth-of-type(1) {
+				-ms-grid-column: 1;
+				-ms-grid-row: 1;
+			}
+
+			&:nth-of-type(2) {
+				-ms-grid-column: 2;
+				-ms-grid-row: 1;
+			}
+
+			&:nth-of-type(3) {
+				-ms-grid-column: 3;
+				-ms-grid-row: 1;
+			}
+		}
+	}
+
+	.sectionFour {
+		&__ieFix {
+			.row {
+				flex-grow: 1;
+			}
+		}
+	}
+}
+
+@media screen and (-ms-high-contrast: none) and (max-width: $mobile-max) {
+	.sectionOne {
+		&__itemsWrap {
+			-ms-grid-columns: 1fr 1fr;
+			-ms-grid-rows: 1fr 1fr;
+			padding: 0 11px;
+		}
+
+		&__item {
+			margin: 0 4px;
+
+			&:nth-of-type(n+3) {
+				margin-top: 8px;
+			}
+
+			&:nth-of-type(3) {
+				-ms-grid-column: 1;
+				-ms-grid-row: 2;
+			}
+
+			&:nth-of-type(4) {
+				-ms-grid-column: 2;
+				-ms-grid-row: 2;
+			}
+
+			&:nth-of-type(5) {
+				-ms-grid-column: 1;
+				-ms-grid-row: 3;
+			}
+
+			&:nth-of-type(6) {
+				-ms-grid-column: 2;
+				-ms-grid-row: 3;
+			}
+		}
+	}
+}
+
+@media screen and (-ms-high-contrast: none) and (min-width: $tablet-min) and (max-width: $tablet-max) {
+	.sectionOne {
+		&__itemsWrap {
+			-ms-grid-columns: 1fr 1fr 1fr;
+			-ms-grid-rows: 1fr 1fr;
+		}
+
+		&__item {
+			&:nth-of-type(n+4) {
+				margin-top: 20px;
+			}
+
+			&:nth-of-type(4) {
+				-ms-grid-column: 1;
+				-ms-grid-row: 2;
+			}
+
+			&:nth-of-type(5) {
+				-ms-grid-column: 2;
+				-ms-grid-row: 2;
+			}
+
+			&:nth-of-type(6) {
+				-ms-grid-column: 3;
+				-ms-grid-row: 2;
+			}
+		}
+	}
+
+	.sectionThree {
+		&__item {
+			img {
+				height: 74.11px;
+			}
+		}
+	}
+}
+
+@media screen and (-ms-high-contrast: none) and (min-width: $desktop-min) {
+	.sectionOne {
+		&__itemsWrap {
+			-ms-grid-columns: 1fr 1fr 1fr 1fr;
+			-ms-grid-rows: 1fr;
+		}
+
+		&__item {
+			&:nth-of-type(4) {
+				-ms-grid-column: 4;
+				-ms-grid-row: 1;
+			}
+
+			&:nth-of-type(5) {
+				-ms-grid-column: 5;
+				-ms-grid-row: 1;
+			}
+
+			&:nth-of-type(6) {
+				-ms-grid-column: 6;
+				-ms-grid-row: 1;
+			}
+		}
+	}
+}
+
+@media screen and (-ms-high-contrast: none) and (min-width: $desktop-min) and (max-width: $desktop-max) {
+	.sectionThree {
+		&__item {
+			img {
+				height: 103.75px;
+			}
+		}
+	}
+}
