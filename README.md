@@ -29,7 +29,8 @@ https://hardsign28.github.io/sirenTest/
 <h3>Проверил через Lambdatest:</h3>
 <ul>
   <li>Mac Safari v12</li>
-  <li>iPhone 11 Safari iOS 13.3 </li>  
+  <li>iPad Pro(11-inch) Safari iOS 13.4 </li>
+  <li>iPhone 11 Safari iOS 13.3</li>  
 </ul>
 
 <br />
