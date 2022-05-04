@@ -416,7 +416,6 @@ footer .copyright {
   }
   .sectionOne__item {
     margin: 0 10px 20px;
-    width: calc(25% - 20px);
   }
 
   .sectionFour__ieFix .row {
@@ -435,8 +434,8 @@ footer .copyright {
 }
 @media screen and (-ms-high-contrast: none) and (min-width: 768px) and (max-width: 991.98px) {
   .sectionOne__item {
+    flex-basis: 42.1%;
     margin: 0 10px 20px;
-    width: calc(33.33% - 20px);
   }
 
   .sectionThree__item img {
@@ -446,5 +445,13 @@ footer .copyright {
 @media screen and (-ms-high-contrast: none) and (min-width: 992px) and (max-width: 1199.98px) {
   .sectionThree__item img {
     height: 103.75px;
+  }
+}
+@media screen and (-ms-high-contrast: none) and (min-width: 992px) {
+  .sectionOne__itemsWrap {
+    flex-wrap: nowrap;
+  }
+  .sectionOne__item {
+    flex-basis: 50%;
   }
 }
