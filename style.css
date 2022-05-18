@@ -8,6 +8,7 @@
   font-size: 18px;
   font-weight: 500;
   line-height: 1.4;
+  margin: 0;
 }
 @media (max-width: 767.98px) {
   .body {
@@ -58,6 +59,7 @@
 
 .heading {
   line-height: 1.3;
+  margin-top: 0;
 }
 .heading_1 {
   font-size: 45px;
@@ -97,7 +99,11 @@
 }
 
 .p {
-  margin-bottom: 19px;
+  margin: 0 0 19px;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .header {
@@ -263,6 +269,9 @@
 .sectionThree {
   padding: 60px 0;
 }
+.sectionThree__description {
+  text-align: center;
+}
 .sectionThree__itemsWrap {
   margin-top: 25px;
 }
@@ -312,11 +321,6 @@
 .sectionFour {
   background: #f6f6f6;
 }
-@media (max-width: 767.98px) {
-  .sectionFour {
-    padding: 35px 0 15px;
-  }
-}
 .sectionFour__iconWarranty {
   background: url("img/icon-5.svg") center no-repeat;
   background-size: contain;
@@ -337,17 +341,34 @@
     width: 170px;
   }
 }
+.sectionFour__warrantyDescription {
+  margin-top: 20px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .sectionFour__warrantyDescription {
+    text-align: left;
+  }
+}
+@media (max-width: 767.98px) {
+  .sectionFour {
+    padding: 35px 0 15px;
+  }
+}
 @media (min-width: 768px) {
   .sectionFour .container {
     height: 216px;
-  }
-  .sectionFour__warrantyDescription {
-    margin-top: 20px;
   }
 }
 
 .sectionFive {
   padding: 60px 0;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .sectionFive .container {
+    text-align: left;
+  }
 }
 @media (max-width: 767.98px) {
   .sectionFive {
